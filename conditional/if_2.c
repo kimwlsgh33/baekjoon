@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+//성적에 따른 등급 나타내기
 int main()
 {
     int num;
