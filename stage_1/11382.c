@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void)
+{
+    long long A, B, C;
+    scanf("%lld %lld %lld", &A, &B, &C);
+    long long sum = A + B + C;
+    printf("%lld\n", sum);
+    return 0;
+}
