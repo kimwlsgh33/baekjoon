@@ -1,2 +1,2 @@
-# executable
-*.out
+# executable in all directories
+*/*.out
