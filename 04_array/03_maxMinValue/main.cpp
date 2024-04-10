@@ -2,28 +2,21 @@
 using namespace std;
 
 int main(void){
-    int T = 0;
-    cin >> T;
-    int tmep = 0;
-    int firstN[T] = {0};
-    for (int i = 0; i < T; i++)
+    int count = 0;
+    int i = 0;
+    int num;
+    int a = 1000000;  //max
+    int b = -1000000;  //min
+    cin >> count;
+    while (1)
     {
-        cin >> firstN[i];
-    }
-
-    for (int i = 0 ; i < T ; ++i){
-        for (int j = i; j < T-1; j++)
-        {
-            if (firstN[j] >= firstN[i])
-            {
-                tmep = firstN[j];
-                firstN[j] = firstN[i];
-                firstN[i] = tmep;
-            }
-            
-        }
+        cin >> num;
+        if(num < a) a = num;
+        if(num > b) b = num;
+        ++i;
+        if(count == i)break;
     }
     
-    cout << firstN [T-1] << ' ' << firstN[0];
+    cout << a << ' ' << b;
     return 0;
 }

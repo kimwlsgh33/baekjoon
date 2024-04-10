@@ -9,31 +9,32 @@
 
 
 // 시간 초과
-// #include<stdio.h>
+//  - 많은 for문을 사용함에 따른 시간초과로 틀림
+#include<stdio.h>
 
-// int main(void){
-//     int T = 0;
-//     scanf("%d",&T);
-//     int listN[T];
-//     int tmep = 0;   // swap 변수
+int main(void){
+    int T = 0;
+    scanf("%d",&T);
+    int listN[T];
+    int tmep = 0;   // swap 변수
 
-//     for (int i = 0; i < T; i++){
-//         scanf("%d", listN+i);
-//     }
+    for (int i = 0; i < T; i++){
+        scanf("%d", listN+i);
+    }
     
-//     for (int i = 0 ; i < T ; ++i){
-//         for (int j = i; j < T-1; j++)
-//         {
-//             if (listN[i] > listN[j])
-//             {
-//                 tmep = listN[i];
-//                 listN[i] = listN[j];
-//                 listN[j] = tmep;
-//             }
+    for (int i = 0 ; i < T ; ++i){
+        for (int j = i; j < T-1; j++)
+        {
+            if (listN[i] > listN[j])
+            {
+                tmep = listN[i];
+                listN[i] = listN[j];
+                listN[j] = tmep;
+            }
             
-//         }
-//     }
+        }
+    }
     
-//     printf("%d %d",listN[0], listN[T-1]);
-//     return 0;
-// }
+    printf("%d %d",listN[0], listN[T-1]);
+    return 0;
+}
