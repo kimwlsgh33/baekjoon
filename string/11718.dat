@@ -1,0 +1,6 @@
+00000000001111111111000000000011111111110000000000111111111100000000001111111111000000000011111111110000000000111111111100000000001111111111000000000011111111110000000000111111111100000000001111111111
+The following script enhances
+Ctrl-A and Ctrl-X so that they operate on the next number,
+even if that number is not on the current line (they search for the next number).
+Also, assuming the default backslash leader key,
+typing \ then Ctrl-A or Ctrl-X will search backwards and operate on the previous number.
